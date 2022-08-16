@@ -1,0 +1,92 @@
+.profile{
+    width: 210px;
+    height: 800px;
+}
+.pfpic{
+    margin: 10px 0 0 30px;
+    text-align: center;
+}
+#dashbord{
+
+}
+.cusbtnset1{
+    left: 700px;
+}
+.CusSearchHead{
+    margin-left: -14px;
+    width: 105%;
+}
+#dropdwnCusSearch{
+    position: absolute;
+    right: 325px;
+    top: 110px;
+}
+.cusbtnset2{
+    left: 100px;
+}
+
+#customer{
+    display: none;
+}
+#item{
+    display: none;
+}
+
+.CusDeatailsHead{
+    margin-left: -14px;
+    width: 105%;
+}
+#cusAddBtn{
+    position: absolute;
+    right: 160px;
+    top : 50px;
+}
+#dropdwnCusDetails{
+    position: absolute;
+    right: 330px;
+    top : 50px;
+}
+.itemSelect{
+    position: absolute;
+    left: 600px;
+    bottom: 375px;
+}
+
+#orderAddBtn{
+    margin-left: 310px;
+}
+
+.invoiceDetails{
+  top: -580px;
+}
+
+.orderTable{
+    margin-top: -553px;
+    height: 200px;
+}
+.orderBtnset2{
+    left: 700px;
+    top: 120px;
+}
+
+#order{
+    display: none;
+}
+
+/*//////////////////////*/
+
+#employee{
+    display: none;
+}
+
+/*//////////////////////*/
+
+#setting{
+    display: none;
+}
+
+/*//////////////////////*/
+
+#logoff{
+    display: none;
+}

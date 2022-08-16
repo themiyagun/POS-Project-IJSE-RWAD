@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"  href="css/stylenw.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="#">TIG POS System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-home-tab2" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-settings-tab2" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="v-pills-messages-tab2" href="#">Items</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Others
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item"  id="v-pills-profile-tab2" href="#">Customers</a>
+                        <a class="dropdown-item" id="v-pills-setting2-tab2" href="">Settings</a>
+                        <a class="dropdown-item" id="v-pills-employee-tab2" href="#">Employees</a>
+                        <a class="dropdown-item" href="#">About</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item " >
+                    <a class="nav-link" href="#"><i class="fas fa-user-plus"></i> Sign up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br><br>
+<div class="container-fluid">
+    <div class="row ">
+       <div class="col-xl-2 col-lg-3 d-none d-lg-block bg-dark sideNav fixed-top ">
+           <div class="profile">
+
+                   <img src="images/1.jpg" class="img-fluid rounded-circle pfpic" alt="..." style="height: 150px; width: 150px;">
+                   <h6 class="text-white pfname text-center" >Themiya Gunasekara</h6>
+
+               <div class="bottemsidenav">
+                   <hr class="bg-white">
+                   <div class=" bg-dark">
+                       <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                           <a class="nav-link" id="v-pills-home-tab"  href="#" role="tab" aria-controls="v-pills-home" aria-selected="true" ><i class="fas fa-tachometer-alt" ></i> Dashbord</a>
+                           <a class="nav-link" id="v-pills-profile-tab" href="#"  role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fas fa-users"></i> Customer</a>
+                           <a class="nav-link" id="v-pills-messages-tab"  href="#" role="tab" aria-controls="v-pills-messages" aria-selected="false"><i class="fas fa-cubes"></i> Items</a></a>
+                           <a class="nav-link" id="v-pills-settings-tab"  href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-shopping-cart"></i> Orders</a>
+                           <a class="nav-link" id="v-pills-employee-tab"  href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-male"></i> Employees</a>
+                           <br>
+                           <a class="nav-link" id="v-pills-setting2-tab"  href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cogs"></i>Settings</a>
+                           <a class="nav-link" id="v-pills-logoff-tab"  href="#" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-power-off"></i>Log Off</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+       </div>
+        <div class="col-xl-10 col-lg-9 col-md-12 ml-md-auto bg-secondary">
+            <!--dashbord-->
+            <div class= "container-fluid bg-light" id="dashbord">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                        <header>
+                            <br>
+                            <div class="title">
+                                <h3><i class="fas fa-tachometer-alt" ></i> Dashboard</h3>
+
+                                <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                                    <a href="" ><i class="fas fa-home"></i>Dashboard </a>
+                                </nav>
+                                <div>
+                                    <img class="ml-3 mb-3" id ="1" src="images\1.png" style="width: 90%">
+                                </div>
+                                <h1 id = "annual" >Annual Sales</h1>
+                                <hr>
+
+                                <div>
+                                    <img class="ml-3 mb-3" id ="2" src="images\2.png" style="width: 90%">
+                                </div>
+
+                                <div>
+                                    <img class="ml-3 mb-3" id ="3" src="images\3.png" style="width: 90%">
+                                </div>
+
+                                <div>
+                                    <img class="ml-3 mb-3" id ="4" src="images\4.png" style="width: 90%">
+                                </div>
+                            </div>
+                        </header>
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--//////-->
+
+            <!--customer-->
+
+            <div class="container-fluid bg-light col-lg-12 col-md-12" id="customer">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                        <br>
+                        <div class="title">
+                            <h3><i class="fas fa-users" ></i>Customer</h3>
+
+                            <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                                <a href="" ><i class="fas fa-home"></i>Dashboard <i class="fas fa-angle-right">Customer</i> </a>
+                            </nav>
+                            <div class="row">
+
+                                <div class="col-lg-6 ">
+                                    <br><br>
+                                    <div class="card cusSearch bg-light border border-info col-lg-12 col-md-10 px-0">
+                                        <div Class="CusSearchHead bg-primary border border-info pl-4 "><h5>Customer Search</h5></div>
+                                        <form>
+                                            <div class="form-group mx-2">
+                                                <br>
+                                                <input type="text" class="form-control" id="cusSearchBar" placeholder="Input Name /Nic/ TP Here">
+                                            </div>
+                                            <div class="btn-group ml-2">
+                                                <button type="submit" class="btn btn-primary  col-md-12" id="cusSearchButton">Search</button>
+
+                                                <select class="form-control col-lg-6"  id="dropdwnCusSearch">
+                                                    <option value="Tp">Tp</option>
+                                                    <option value="Nic">Nic</option>
+                                                    <option value="Name">Name</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 mt-2  ml-lg-auto ">
+
+                                    <div class="col-lg-12 btn-group ml-3">
+                                        <button type="button" class="btn btn-success " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">New Customer</button>
+                                        <button type="button" class="btn btn-info ">View All Customer</button>
+                                        <br>
+                                    </div>
+
+                                    <!--search result-->
+
+                                    <div id="cusSearchPanel" class="card bg-light bg-transparent col-lg-12" style="display:none; height: 85% ">
+
+                                        <div class="card-header">
+                                            <h5 class="card-title my-0">Search Results</h5>
+                                        </div>
+                                        <div class="card-body" >
+                                            <div class="form-group">
+                                                <label  class="form-control">Name :<span id="cusNa"></span></label>
+                                                <label  class="form-control">Age :<span id="cusAg" ></span></label>
+                                                <label  class="form-control">Tp :<span id="cusTp" ></span></label>
+                                                <label  class="form-control">Salary :<span id="cusSal" ></span></label>
+                                                <button id = "cusSearchClose" type="button" class="btn btn-success">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--//////////-->
+
+                                </div>
+
+
+                            </div>
+
+                                 <div class="row col-md-12 ">
+                                     <br><br>
+
+                                    <div class="btn-group cusbtnset2 my-2 mx-4" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-secondary bg-danger" id="btnDelete">Delete</button>
+                                        <button class="btn bg-warning" id = "btnEdit">Edit</button>
+                                        <button type="button" class="btn btn-secondary bg-primary">Details</button>
+                                        <button type="button" class="btn btn-secondary bg-success">Clear</button>
+                                    </div>
+                                 </div>
+                                <div class="row">
+                                    <br>
+                                </div>
+                                <table class="table table-hover table-bordered" id="custable">
+                                    <thead>
+                                    <tr class="bg-primary text-white">
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Age</th>
+                                        <th scope="col">Tp</th>
+                                        <th scope="col">Salary</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="custbody">
+
+                                    </tbody>
+                                </table>
+
+                        </div>
+
+                </div>
+            </div>
+
+            <!--/////////////////-->
+
+            <!--item-->
+
+
+            <div class="container-fluid bg-light col-lg-12 col-md-12" id="item">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                    <br>
+                    <div class="title">
+                        <h3><i class="fas fa-cubes" ></i>Item</h3>
+
+                        <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                            <a href="" ><i class="fas fa-home"></i>Dashboard <i class="fas fa-angle-right">Item</i> </a>
+                        </nav>
+
+                        <div class="row">
+
+                            <div class="col-lg-6 ">
+                                <br><br>
+                                <div class="card itemSearch bg-light border border-info col-lg-12 col-md-10 px-0">
+                                    <div Class="CusSearchHead bg-primary border border-info pl-4 "><h5>Item Search</h5></div>
+
+                                    <form>
+                                        <div class="form-group mx-2">
+                                            <br>
+                                            <input type="text" class="form-control" id="itemSearchBar" placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+                                        <div class="btn-group ml-2">
+                                            <button type="submit" class="btn btn-primary col-md-12" id="itemSeachBtn">Search</button>`
+
+                                            <select class="form-control col-lg-6" id="dropdwnCusSearch">
+                                                <option value="ID">Tp</option>
+                                                <option value="Name">Name</option>
+                                            </select>
+                                        </div>
+                                        </form>
+                                    <br>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 mt-2  ml-lg-auto ">
+
+                                    <div class="col-lg-12 btn-group ml-3">
+                                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">New Item</button>
+                                        <button type="button" class="btn btn-info">View All Items</button>
+                                        <br>
+                                    </div>
+
+                                    <!--Item search result-->
+
+
+                                    <div id="itemSearchPanel" class="card bg-light bg-transparent col-lg-12" style="display:none; height: 85%;">
+                                        <div class="card-header">
+                                            <h5 class="card-title my-0">Search Results</h5>
+                                        </div>
+                                        <div class="card-body" >
+                                            <div class="form-group">
+                                                <label  class="form-control">Name :<span id="itemNa"></span></label>
+                                                <label  class="form-control">Price :<span id="itemPr" ></span></label>
+                                                <label  class="form-control">Qty :<span id="itemQu" ></span></label>
+                                                <button id = "itemSearchClose" type="button" class="btn btn-success">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row col-md-12 ">
+                            <br><br>
+                            <div class="btn-group cusbtnset2 my-2 mx-4" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bg-danger" id="itemDelete">Delete</button>
+                                <button type="button" class="btn btn-secondary bg-warning" id="itemEdit">Edit</button>
+                                <button type="button" class="btn btn-secondary bg-primary">Details</button>
+                                <button type="button" class="btn btn-secondary bg-success">Clear</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <br>
+                        </div>
+
+                        <table class="table table-hover table-bordered"  id="itemTable">
+                            <thead>
+                            <tr class="bg-primary text-white">
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Item Price</th>
+                                <th scope="col">Item Quantity</th>
+                            </tr>
+                            </thead>
+                            <tbody id="itemBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--order-->
+
+            <div class="container-fluid bg-light col-lg-12 col-md-12" id="order">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                    <br>
+                    <div class="title">
+                        <h3><i class="fas fa-shopping-cart" ></i>Order</h3>
+
+                        <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                            <a href="" ><i class="fas fa-home"></i>Dashboard <i class="fas fa-angle-right">Order</i> </a>
+                        </nav>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-lg-6 ">
+
+                                <div class="card cusDetails bg-light border border-info ">
+                                    <div Class="CusDeatailsHead bg-primary border border-info pl-4 py-1 "><h5>Customer Details</h5></div>
+                                    <br>
+                                    <form>
+                                        <div class="btn-group">
+                                            <label class="col-md-4 mt-2" for="customer">Customer :</label>
+                                            <select class="form-control" id="dropdwnorderCusDetails" name="customer">
+                                                <option value="">name</option>
+                                            </select>
+                                            <button type="submit" class="btn btn-success " id="cusAddBtn">Add New Customer</button>
+                                        </div>
+                                        <div class="form-group mx-2">
+                                            <label >Address : </label>
+                                            <input type="text" class="form-control"  placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+
+                                        <div class="form-group mx-2">
+                                            <label >Tel :</label>
+                                            <input type="text" class="form-control"  placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+
+                                        <div class="form-group mx-2">
+                                            <label >Credit Limit :</label>
+                                            <input type="text" class="form-control"  placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+                                    </form>
+                                </div>
+                                <br>
+                                <div class="card invoiceDetails bg-light border border-info ">
+                                    <div Class="CusDeatailsHead bg-primary border border-info pl-2 py-1 "><h5>Invoice Deatails</h5></div>
+                                    <br>
+                                    <form>
+                                        <div class="form-group px-2">
+                                            <label >Date : </label>
+                                            <input type="date" class="form-control" id="orderDate"  placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+
+                                        <div class="form-group px-2">
+                                            <label >OID :</label>
+                                            <input type="text" class="form-control" id="orderID" placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+                                    </form>
+                                </div>
+                                <br>
+
+                            </div>
+
+                            <div class="col-lg-6 ">
+                                <div class="card itemSelect  bg-light border border-info ">
+                                    <div Class="CusDeatailsHead bg-primary border border-info pl-2 py-1"><h5>Item Select</h5></div>
+                                    <br>
+                                    <form class="px-2">
+                                        <label >Items :</label>
+                                        <select class="form-control"  id="dropdwnorderItemSelect">
+
+                                        </select>
+
+                                        <div class="form-group">
+                                            <label >Price :</label>
+                                            <input type="text" class="form-control" id="orderItemPrice" placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label >Quentity :</label>
+                                            <input type="text" class="form-control" id="orderItemQty" placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+                                        <br><hr>
+                                        <br><h4 align = "center" >Order Item </h4><br><hr>
+                                        <div class="form-group">
+                                            <label >Order Quentity :</label>
+                                            <input type="text" class="form-control" id="orderQty" placeholder="Input Name /Nic/ TP Here">
+                                        </div>
+
+                                        <button type="submit" class="btn btn-danger" id="orderAddBtn">Add Order</button>
+
+                                    </form>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+
+                        <table class="table table-hover table-bordered orderTable">
+                            <thead>
+                            <tr class="bg-primary text-white">
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quntity</th>
+                                <th id="total">Tot</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+
+                        <div class="jumbotron footer">
+                            <div class="Total">
+                                <h1>Total :</h1><br>
+                                <div class="fields">
+                                    Cash : <input class="rounded" type="text" name="" >
+                                    Balance : <input class="rounded" type="text" name="" >
+                                    Discount : <input class="rounded" type="text" name="" >
+                                </div>
+                            </div>
+                            <br>
+                            <div class="btn-group orderBtnset2" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-secondary bg-danger">Clear</button>
+                                <button type="button" class="btn btn-secondary bg-warning">ReNew Order</button>
+                                <button type="button" class="btn btn-secondary bg-primary">Submit Order</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--////////-->
+            <!--employee-->
+            <div class= "container-fluid bg-light" id="employee">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                    <header>
+                        <br>
+                        <div class="title">
+                            <h3><i class="fas fa-male" ></i> Employee</h3>
+
+                            <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                                <a href="" ><i class="fas fa-home"></i>Dashboard <i class="fas fa-angle-right">Employee</i></a>
+                            </nav>
+                        </div>
+                    </header>
+                    <!--</div>-->
+                </div>
+            </div>
+
+            <!--setting-->
+
+            <div class= "container-fluid bg-light" id="setting">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                    <header>
+                        <br>
+                        <div class="title">
+                            <h3><i class="fas fa-cogs" ></i> Settings</h3>
+
+                            <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                                <a href="" ><i class="fas fa-home"></i>Dashboard <i class="fas fa-angle-right">Settings</i></a>
+                            </nav>
+                        </div>
+                    </header>
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--logoff-->
+            <div class= "container-fluid bg-light" id="logoff">
+                <div class="col-md-12 ml-auto ml-4">
+                    <!--<div class="container-fluid bg-light">-->
+                    <header>
+                        <br>
+                        <div class="title">
+                            <h3><i class="fas fa-power-off" ></i> Log Off</h3>
+
+                            <nav class="path border-secondary border-top border-bottom" style="padding: 5px; background-color: rgba(150, 150, 150, 0.78);">
+                                <a href="" ><i class="fas fa-home"></i>Dashboard <i class="fas fa-angle-right">Logoff</i></a>
+                            </nav>
+                    </header>
+                    <!--</div>-->
+                </div>
+            </div>
+
+        </div>
+</div>
+
+    <!--addcusform model-->
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="exampleModalLabel">New Customer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="cusName" class="col-form-label">Name :</label>
+                            <input type="text" class="form-control" id="cusName">
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="col-form-label">Age :</label>
+                            <input type="text" class="form-control" id="cusAge">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label for="tel" class="col-form-label "> TP :</label>
+                            <input type="text" class="form-control col-md-5" id="cusID">
+                            <label for="salary" class="col-form-label"> Salary :</label>
+                            <input type="text" class="form-control col-md-5" id="cusSalary">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btnSave">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--update customer model-->
+
+
+    <div class="modal fade" id="editCustomerModal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title">Edit Customer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="col-form-label">Name : <span id="cusEditNamelbl"></span></label>
+                            <input type="text" class="form-control" id="cusEditName">
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="col-form-label">Age : <span id="cusEditAgelbl"></span></label>
+                            <input type="text" class="form-control" id="cusEditAge">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label for="tel" class="col-form-label "> TP : <span id="cusEditTPlbl"></span></label>
+                            <input type="text" class="form-control col-md-5" id="cusEditTP">
+                            <label for="salary" class="col-form-label">Salary : <span id="cusEditSallbl"></span></label>
+                            <input type="text" class="form-control col-md-5" id="cusEditSalary">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="btnUpdate">Update</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--////////////////-->
+
+    <!--add item model-->
+
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title" id="exampleModalLabel">New Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="itemName" class="col-form-label">Name :</label>
+                            <input type="text" class="form-control" id="itemName">
+                        </div>
+                        <div class="form-group">
+                            <label for="price" class="col-form-label">Price :</label>
+                            <input type="text" class="form-control" id="itemPrice">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label for="qty" class="col-form-label "> Quentity :</label>
+                            <input type="text" class="form-control col-md-5" id="itemQty">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="itemSave">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--///////-->
+
+    <!--update Item model-->
+
+
+    <div class="modal fade" id="editItemModal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title">Edit Item</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label class="col-form-label">Name : <span id="itemEditNamelbl"></span></label>
+                            <input type="text" class="form-control" id="itemEditName">
+                        </div>
+                        <div class="form-group">
+                            <label for="age" class="col-form-label">Price : <span id="itemEditPricelbl"></span></label>
+                            <input type="text" class="form-control" id="itemEditPrice">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label for="tel" class="col-form-label "> Qty : <span id="itemEditQtylbl"></span></label>
+                            <input type="text" class="form-control col-md-5" id="itemEditQty">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="itemUpdate">Update</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" rel="script" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" rel="script" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" rel="script" src="js/pageChange.js"></script>
+
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+<!--<script  type="text/javascript" rel="script" src="js/jquery-3.3.1.min.js"></script>-->
+    <script  type="text/javascript" rel="script" src="dTO/customerDTO.js"></script>
+    <script  type="text/javascript" rel="script" src="db/dBconnection.js"></script>
+    <script  type="text/javascript" rel="script" src="controller/customerController.js"></script>
+    <script  type="text/javascript" rel="script" src="dTO/itemDTO.js"></script>
+    <!--<script  type="text/javascript" rel="script" src="db/dBconnection.js"></script>-->
+    <script  type="text/javascript" rel="script" src="controller/itemController.js"></script>
+    <script  type="text/javascript" rel="script" src="dTO/orderDTO.js"></script>
+    <script  type="text/javascript" rel="script" src="dTO/orderdetailsDTO.js"></script>
+    <script  type="text/javascript" rel="script" src="controller/orderController.js"></script>
+    <script  type="text/javascript" rel="script" src="controller/orderDetailsController.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
